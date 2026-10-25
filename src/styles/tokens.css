@@ -1,0 +1,85 @@
+/* ==========================================================================
+   NOEMA — tasarım belirteçleri (design tokens)
+   Koyu gece mavisi, siyaha yakın tonlar, kırık beyaz, kontrollü mor vurgu.
+   ========================================================================== */
+
+:root {
+  /* Yüzeyler / arka planlar */
+  --ink-1000: #03050a;
+  --ink-950: #05080f;
+  --ink-900: #070b15;
+  --ink-850: #090e1b;
+  --ink-800: #0c1322;
+  --ink-700: #121b2e;
+  --ink-600: #1a2540;
+
+  /* Kırık beyaz tonları */
+  --paper: #edebe5;
+  --paper-88: rgba(237, 235, 229, 0.88);
+  --paper-68: rgba(237, 235, 229, 0.68);
+  --paper-48: rgba(237, 235, 229, 0.48);
+  --paper-32: rgba(237, 235, 229, 0.32);
+  --paper-18: rgba(237, 235, 229, 0.18);
+  --paper-10: rgba(237, 235, 229, 0.1);
+  --paper-06: rgba(237, 235, 229, 0.06);
+  --paper-03: rgba(237, 235, 229, 0.03);
+
+  /* Mor vurgu */
+  --violet: #8b5cf6;
+  --violet-bright: #b79cff;
+  --violet-deep: #5b34c7;
+  --violet-ink: #2a1a52;
+  --violet-wash: rgba(139, 92, 246, 0.12);
+  --violet-glow: rgba(139, 92, 246, 0.38);
+
+  /* Durum renkleri (ölçülü kullanım) */
+  --signal: #8fd9b6;
+  --alert: #e89b9b;
+
+  /* Çizgiler */
+  --line: rgba(237, 235, 229, 0.1);
+  --line-soft: rgba(237, 235, 229, 0.06);
+  --line-strong: rgba(237, 235, 229, 0.22);
+
+  /* Tipografi */
+  --font-display: 'Instrument Serif', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+  --font-sans: 'Space Grotesk', 'Segoe UI Variable Text', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Mono', Consolas, 'SFMono-Regular', 'Courier New', monospace;
+
+  --fs-display: clamp(3.2rem, 10.2vw, 8.4rem);
+  --fs-h2: clamp(2.15rem, 5vw, 3.9rem);
+  --fs-h3: clamp(1.4rem, 2.2vw, 1.9rem);
+  --fs-lead: clamp(1.05rem, 0.98rem + 0.42vw, 1.35rem);
+  --fs-body: clamp(0.98rem, 0.95rem + 0.16vw, 1.08rem);
+  --fs-small: 0.875rem;
+  --fs-micro: 0.72rem;
+
+  --tracking-wide: 0.24em;
+  --tracking-mid: 0.12em;
+
+  /* Ölçek */
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+  --section-pad: clamp(4.5rem, 11vh, 9rem);
+  --max-w: 1440px;
+  --max-text: 68ch;
+
+  /* Hareket */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 180ms;
+  --dur-2: 340ms;
+  --dur-3: 700ms;
+
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 22px;
+
+  --header-h: 72px;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --header-h: 62px;
+  }
+}
